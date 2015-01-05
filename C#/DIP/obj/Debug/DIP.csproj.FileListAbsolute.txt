@@ -1,0 +1,17 @@
+E:\VSProject\DIP\DIP\bin\Debug\DIP.exe.config
+E:\VSProject\DIP\DIP\bin\Debug\DIP.exe.manifest
+E:\VSProject\DIP\DIP\bin\Debug\DIP.application
+E:\VSProject\DIP\DIP\bin\Debug\DIP.exe
+E:\VSProject\DIP\DIP\bin\Debug\DIP.pdb
+E:\VSProject\DIP\DIP\obj\Debug\MainWindow.baml
+E:\VSProject\DIP\DIP\obj\Debug\MainWindow.g.cs
+E:\VSProject\DIP\DIP\obj\Debug\App.g.cs
+E:\VSProject\DIP\DIP\obj\Debug\DIP_MarkupCompile.cache
+E:\VSProject\DIP\DIP\obj\Debug\DIP.g.resources
+E:\VSProject\DIP\DIP\obj\Debug\DIP.Properties.Resources.resources
+E:\VSProject\DIP\DIP\obj\Debug\DIP.csproj.GenerateResource.Cache
+E:\VSProject\DIP\DIP\obj\Debug\DIP.exe.manifest
+E:\VSProject\DIP\DIP\obj\Debug\DIP.application
+E:\VSProject\DIP\DIP\obj\Debug\DIP.exe
+E:\VSProject\DIP\DIP\obj\Debug\DIP.pdb
+E:\VSProject\DIP\DIP\obj\Debug\DIP.csprojResolveAssemblyReference.cache

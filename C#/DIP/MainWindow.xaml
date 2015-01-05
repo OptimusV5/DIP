@@ -1,0 +1,125 @@
+﻿<Window x:Class="DIP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DIP" Height="480" Width="1024">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Menu HorizontalAlignment="Left" Height="20" Margin="0,0,0,0" VerticalAlignment="Top" Width="1024" Grid.Row="0">
+            <MenuItem Header="File">
+                <MenuItem Header="open" Click="Open_Click" />
+                <MenuItem Header="Save as" Click="Save_Click" />
+            </MenuItem>
+            <MenuItem Header="HW1">
+                <MenuItem x:Name="Scaling" Header="Scaling">
+                    <MenuItem x:Name="Scal1" Header="12 * 8" Click="Scaling_Click" />
+                    <MenuItem x:Name="Scal2" Header="24 * 16" Click="Scaling_Click" />
+                    <MenuItem x:Name="Scal3" Header="48 * 32" Click="Scaling_Click" />
+                    <MenuItem x:Name="Scal4" Header="96 * 64" Click="Scaling_Click" />
+                    <MenuItem x:Name="Scal5" Header="192 * 128" Click="Scaling_Click" />
+                    <MenuItem x:Name="Scal6" Header="300 * 200" Click="Scaling_Click" />
+                    <MenuItem x:Name="Scal7" Header="450 * 300" Click="Scaling_Click" />
+                    <MenuItem x:Name="Scal8" Header="500 * 200" Click="Scaling_Click" />
+                </MenuItem>
+                <MenuItem x:Name="Quantize" Header="Quantize">
+                    <MenuItem x:Name="Quan1" Header="128" Click="Quantize_Click" />
+                    <MenuItem x:Name="Quan2" Header="32" Click="Quantize_Click" />
+                    <MenuItem x:Name="Quan3" Header="8" Click="Quantize_Click" />
+                    <MenuItem x:Name="Quan4" Header="4" Click="Quantize_Click" />
+                    <MenuItem x:Name="Quan5" Header="2" Click="Quantize_Click" />
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="HW2">
+                <MenuItem x:Name="Hist" Header="Hist">
+                    <MenuItem x:Name="Plot" Header="Plot" Click="Plot_OnClick" />
+                    <MenuItem x:Name="Equatize" Header="Equatize" Click="Equatize_OnClick" />
+                </MenuItem>
+                <MenuItem x:Name="Patch" Header="Patch">
+                    <MenuItem x:Name="PatchItem1" Header="96 * 64" Click="PatchItem_OnClick" />
+                    <MenuItem x:Name="PatchItem2" Header="50 * 50" Click="PatchItem_OnClick" />
+                </MenuItem>
+                <MenuItem x:Name="Filter" Header="Spatial-Filter">
+                    <MenuItem x:Name="FilterItem1" Header="3 * 3" Click="Filter_OnClick" />
+                    <MenuItem x:Name="FilterItem2" Header="7 * 7" Click="Filter_OnClick" />
+                    <MenuItem x:Name="FilterItem3" Header="11 * 11" Click="Filter_OnClick" />
+                    <MenuItem x:Name="FilterItem4" Header="Laplacian" Click="Filter_OnClick" />
+                    <MenuItem x:Name="FilterItem5" Header="Sobel1" Click="Filter_OnClick" />
+                    <MenuItem x:Name="FilterItem6" Header="Sobel2" Click="Filter_OnClick" />
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="HW3">
+                <MenuItem x:Name="Ft" Header="2-DDFT">
+                    <MenuItem x:Name="Dft" Header="DFT" Click="Dft_OnClick" />
+                    <MenuItem x:Name="Idft" Header="IDFT" Click="Dft_OnClick" />
+                </MenuItem>
+                <MenuItem x:Name="Fft" Header="2-DFFT">
+                    <MenuItem x:Name="FftItem" Header="FFT" Click="Fft_OnClick" />
+                    <MenuItem x:Name="IfftItem" Header="IFFT" Click="Fft_OnClick" />
+                </MenuItem>
+                <MenuItem x:Name="Freq" Header="Freq-Filter">
+                    <MenuItem x:Name="FreqItem1" Header="Averaging" Click="Freq_Filter_OnClick" />
+                    <MenuItem x:Name="FreqItem2" Header="Laplacian" Click="Freq_Filter_OnClick" />
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="HW4">
+                <MenuItem Header="Filtering">
+                    <MenuItem Header="Arithmetic">
+                        <MenuItem Header="3 * 3" Click ="Ari_OnClick" />
+                        <MenuItem Header="9 * 9" Click ="Ari_OnClick"/>
+                    </MenuItem>
+                    <MenuItem Header="Harmonic">
+                        <MenuItem Header="3 * 3" Click="Har_OnClick"/>
+                        <MenuItem Header="9 * 9" Click="Har_OnClick"/>
+                    </MenuItem>
+                    <MenuItem Header="Contraharmonic">
+                        <MenuItem Header="3 * 3" Click="Con_OnClick"/>
+                        <MenuItem Header="9 * 9" Click="Con_OnClick"/>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="Denosing">
+                    <MenuItem Header="Target3">
+                        <MenuItem Header="Nosing" Click="T3_Nos_OnClick"/>
+                        <MenuItem Header="Denosing">
+                            <MenuItem Header="Arithmetic" Click =" T3_Den_OnCLick"/>
+                            <MenuItem Header="Geometric" Click="T3_Den_OnCLick"/>
+                            <MenuItem Header="Harmonic" Click="T3_Den_OnCLick"/>
+                            <MenuItem Header="Contraharmontic" Click="T3_Den_OnCLick"/>
+                            <MenuItem Header="Median" Click="T3_Den_OnCLick"/>
+                        </MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="Target4" >
+                        <MenuItem Header="Nosing" Click="T4_Nos_OnClick"/>
+                        <MenuItem Header="Denosing">
+                            <MenuItem Header="Q &lt; 0" Click="T4_Den_OnCLick"/>
+                            <MenuItem Header="Q &gt; 0" Click="T4_Den_OnCLick"/>
+                        </MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="Target5">
+                        <MenuItem Header="Nosing" Click ="T5_Nos_OnClick"/>
+                        <MenuItem Header="Denosing">
+                            <MenuItem Header="Arithmetic" Click="T5_Den_OnCLick"/>
+                            <MenuItem Header="Harmonic" Click="T5_Den_OnCLick"/>
+                            <MenuItem Header="Contraharmontic" Click="T5_Den_OnCLick"/>
+                            <MenuItem Header="Max" Click="T5_Den_OnCLick"/>
+                            <MenuItem Header="Min" Click="T5_Den_OnCLick"/>
+                            <MenuItem Header="Median" Click="T5_Den_OnCLick"/>
+                        </MenuItem>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="Histogram">
+                    <MenuItem Header="Target1" Click="His_OnClick"></MenuItem>
+                    <MenuItem Header="Target2" Click="His_OnClick"></MenuItem>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <Grid Margin="0,25,512,-422">
+            <Image x:Name="OriginImage" Stretch="None" />
+        </Grid>
+        <Grid Margin="504,25,0,-422">
+            <Image x:Name="OutputImage" Stretch="None" />
+        </Grid>
+    </Grid>
+
+
+</Window>

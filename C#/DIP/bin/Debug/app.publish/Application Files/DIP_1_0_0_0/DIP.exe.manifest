@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="DIP.exe" version="1.0.0.0" publicKeyToken="e3090b76dc2c7699" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="DIP" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="DIP.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DIP.exe" size="15360">
+      <assemblyIdentity name="DIP" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qRSLZs8R1I2icYTdxy9koyVRpqKdabEH0IEebO3vtlU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="DIP.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=OPTIMUS\OptimusV5" issuerKeyHash="24e6d6364e8815c5d31e77f53767d30d3a4ab5c0" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>xuUo7uvyz74DXp29DJ10F08I6d3GOtKakSCvYZoG1F0=</DigestValue></Reference></SignedInfo><SignatureValue>g0tSZucjbNjF+u/2/2Re11lFRD9X/UqtSnrKi3O7VdSU+Rf5ISz9WEiV9ZPqN63I4m50BTq7Wyi6hmnlbzhF3N7poEfasUxwFGhWzQ+H3c7OKPR+D+cKEx1JSrlX3ev9fmu3KwxNKRQclKXE/0NFJttKmjHZWCurouYQZZ23nk4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pKnj0RTiprB6sAawlzN+Zhx4Nxt9h9hjheJcnbssEEinUgl3TmiGsnsMBCp7AuwfSIM1X3T1LK+SKjS2SWuhKNJRYtzUZX0MfhKrC4WhhXQd0i49mGKbVRma9yWzi8x80VTnEZnRMbtQaCc4nA61J2x/nVnz7dqtFOgH2MeWw9k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="5dd4069a61af20919ad23ac6dde9084f17749d0cbd9d5e03becff2ebee28e5c6" Description="" Url=""><as:assemblyIdentity name="DIP.exe" version="1.0.0.0" publicKeyToken="e3090b76dc2c7699" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=OPTIMUS\OptimusV5</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>va0ZYxEgKkfPjiVrDUrDjr/LdnNemxA5fO79iI34RhE=</DigestValue></Reference></SignedInfo><SignatureValue>OvxnbIl/WeF+o3Z5unF10/DS403YoMbKSE53CNs3NSoovlDgH9t0pwCB6oOz8/hvoPK+ZQqryTFj6khihRh4kgkfFU+3H30r9TURnju0QnceXn43A1lsqEZERAJofAjzMG1eEyMZjRfO5X+hcyVIsy52tB+n6ZmjtoiKams3TC0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pKnj0RTiprB6sAawlzN+Zhx4Nxt9h9hjheJcnbssEEinUgl3TmiGsnsMBCp7AuwfSIM1X3T1LK+SKjS2SWuhKNJRYtzUZX0MfhKrC4WhhXQd0i49mGKbVRma9yWzi8x80VTnEZnRMbtQaCc4nA61J2x/nVnz7dqtFOgH2MeWw9k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQMflglZUcg5JD26Q/zGyOJjANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDHiIATwBQAFQASQBNAFUAUwBcAE8AcAB0AGkAbQB1AHMAVgA1MB4XDTE0MTEwODExNDY1M1oXDTE1MTEwODE3NDY1M1owLTErMCkGA1UEAx4iAE8AUABUAEkATQBVAFMAXABPAHAAdABpAG0AdQBzAFYANTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEApKnj0RTiprB6sAawlzN+Zhx4Nxt9h9hjheJcnbssEEinUgl3TmiGsnsMBCp7AuwfSIM1X3T1LK+SKjS2SWuhKNJRYtzUZX0MfhKrC4WhhXQd0i49mGKbVRma9yWzi8x80VTnEZnRMbtQaCc4nA61J2x/nVnz7dqtFOgH2MeWw9kCAwEAATANBgkqhkiG9w0BAQsFAAOBgQCNCLWFt9x0XCbiwwqWQoac2+5QbB/cRfUoySGzqcp3f1hZunxCE9I3RZ5T5H0S4ELgyCsPauqlmAl+AOLkNYaZTJC5xvwYuA+SfcMcj/2h5kPQ4NdzmXkm4UzLwC5G0UikWDeH/ltsHl1iFIjYaWOg2JUcgoIbaGcN4g1s3SObUw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
